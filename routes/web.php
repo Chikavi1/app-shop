@@ -2,9 +2,7 @@
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TestController@index');
 
 Auth::routes();
 
