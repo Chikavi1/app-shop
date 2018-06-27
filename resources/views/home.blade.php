@@ -14,7 +14,17 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <h1>Productos</h1>
+                    @foreach($products as $product)
+                    <div style="color: blue;">
+                        <p > 
+                            {{$product->id}}.-{{$product->name}}
+                        </p>
+                    </div>
+                        <p style="font-weight: bold;">
+                            {{$product->description}}
+                        </p>
+                    @endforeach
                 </div>
             </div>
         </div>
